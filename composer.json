@@ -1,0 +1,45 @@
+{
+    "name": "incompass/aws-secrets-bundle",
+    "type": "symfony-bundle",
+    "description": "Loads ENV vars from AWS Secrets Manager",
+    "keywords": ["Symfony", "AWS", "ENV", "Secrets Manager"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joe Mizzi",
+            "email": "joe@casechek.com"
+        },
+        {
+            "name": "James Matsumura",
+            "email": "james@casechek.com"
+        },
+        {
+            "name": "Steven Lehn",
+            "email": "steven.lehn@casechek.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*",
+        "aws/aws-sdk-php": "^3.62",
+        "symfony/dependency-injection": "^3.4 | ^4.0 | ^5.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "symfony/framework-bundle": "^3.4 | ^4.0 | ^5.0",
+        "phpunit/phpunit": "^9.5.26",
+        "symfony/phpunit-bridge": "*",
+        "friends-of-behat/symfony-extension": "^v2.3.1",
+        "phpspec/prophecy-phpunit": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AwsSecretsBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\AwsSecretsBundle\\": "tests/"
+        }
+    }
+}
