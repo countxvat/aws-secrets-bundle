@@ -19,17 +19,17 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": ">=8.0",
         "ext-json": "*",
         "aws/aws-sdk-php": "^3.62",
-        "symfony/dependency-injection": "^3.4 | ^4.0 | ^5.0"
+        "symfony/dependency-injection": "^5.4 | ^6.0 | ^7.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
-        "symfony/framework-bundle": "^3.4 | ^4.0 | ^5.0",
-        "phpunit/phpunit": "^9.5.26",
-        "symfony/phpunit-bridge": "*",
-        "friends-of-behat/symfony-extension": "^v2.3.1",
+        "symfony/framework-bundle": "^5.4 | ^6.0 | ^7.0",
+        "phpunit/phpunit": "^9.5 | ^10.0 | ^11.0",
+        "symfony/phpunit-bridge": "^5.4 | ^6.0 | ^7.0",
+        "friends-of-behat/symfony-extension": "^2.4",
         "phpspec/prophecy-phpunit": "^2.0"
     },
     "autoload": {
